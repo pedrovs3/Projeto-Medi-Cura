@@ -61,6 +61,8 @@ main{
     font-weight: bolder;
 }
 
-@media (max-width: 800px){
-    
+@media(max-width: 768px){
+    body{
+        
+    }
 }

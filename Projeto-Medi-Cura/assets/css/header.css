@@ -89,3 +89,33 @@ ul li a:hover::after{
     border-radius: 0px 0px 5px 5px;
     padding: 2px;
 }
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+ @media (max-width: 868px){
+    body{
+        overflow-x: hidden;
+    }
+    .flex-menu li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .cabecalho{
+        padding: 0;
+    }
+
+} 
