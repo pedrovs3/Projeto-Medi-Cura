@@ -1,0 +1,81 @@
+
+footer{
+    height: 12vh;
+    background: linear-gradient(90deg, #6BAAAE 5.73%, #00979E 88.02%), #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.first-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-5px);
+    
+}
+
+.title-one{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-left: 39px;
+}
+
+.Contatos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-right: 336px;
+}
+
+.second-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.social-content{
+    margin-left: 74px;
+}
+
+.social-content a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.instagram{
+    padding-right: 20px;
+ }
+
+.medi{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+
+.sobre{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.infos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    margin-right: 37px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
