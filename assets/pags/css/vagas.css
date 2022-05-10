@@ -1,0 +1,102 @@
+.beneficios{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../../img/bg.png);
+    margin-top: 100px;
+    background-size: cover;
+    background-position: 100% 40%;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-content{
+    padding-left: 90px;
+    max-width: 1200px;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.text-content h1{
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.text-content span{
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+
+.text-content p{
+    font-size: 32px;
+    font-weight: 500;
+    max-width: 800px;
+    padding-bottom: 80px;
+}
+
+.btn-vagas{
+    font-size: 32px;
+    padding: 15px 50px;
+    border-radius: 10px;
+    border: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    background-color: #00979E;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-vagas:hover{
+    background-color:#006f75 ;
+}
+
+/* Cards */
+
+.cards-container ul{
+    height: 500px;
+    display: flex;
+    width: 500px;
+    gap: 330px;
+    list-style: none;
+}
+
+.cards-container ul button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    color: white;
+}
+
+.cards-container ul button img{
+    height: 90px;
+}
+
+.cards-container ul li{
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    right: 16.5%;
+    background-color: #6BAAAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    color: #f5f5f5;
+}
+
+.cards-container ul li:nth-child(1){
+    opacity: 1;
+}
+
+.cards-container ul li:nth-child(2), .cards-container ul li:nth-child(3), .cards-container ul li:nth-child(4), .cards-container ul li:nth-child(5){
+
+}
+
+.cards-container ul li img{
+    height: 80px;
+}
