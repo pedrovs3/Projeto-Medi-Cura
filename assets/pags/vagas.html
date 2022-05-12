@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,12 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../pags/css/headerVagas.css">
     <link rel="stylesheet" href="../pags/css/vagas.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/script.js" defer></script>
 </head>
+
 <body>
     <header class="cabecalho">
         <img class="logo" src="../img/logo.png" alt="Logo Médi cura">
@@ -28,14 +34,14 @@
         </nav>
     </header>
     <main>
-        <div class="beneficios">
+        <section class="beneficios">
             <div class="text-content">
                 <h1>A <span>MÉDI CURA</span> ESTÁ A FRENTE DE OUTRAS EMPRESAS</h1>
                 <p>Sempre oferecendo as melhores condições a seus empregados, e a procura de grandes profissionais</p>
                 <button class="btn-vagas">Vagas Abertas</button>
             </div>
-            <div class="cards-container">
-                <ul>
+            <div class="cards-beneficios-container">
+                <ul class="list-cards">
                     <button><img src="../img/left-arrow.svg" alt=""></button>
                     <li id="card1">
                         <img src="../img/ambulance.svg" alt="ambulancia">
@@ -56,12 +62,122 @@
                     <button><img src="../img/right-arrow.svg" alt=""></button>
                 </ul>
             </div>
-            
-        </div>
-    </main>
-    <footer>
+        </section>
+        <section class="atuacao">
+            <h2>Conheça nossas áreas de atuação</h2>
+            <h3>Clique no card para saber mais</h3>
 
-    </footer>
+            <div class="flex-card-atuacao">
+                <button  id="prev" class="btn-atuacao"><img src="../img/left-arrow.svg" alt=""></button>
+                <ul id="cards">
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                    <li class="card-atuacao">
+                        <span>Engenheiro Quimico</span>
+                        <img src="../img/quimicEnginner.jpg" alt="">
+                    </li>
+                </ul>
+                
+                <button id="next" class="btn-atuacao"><img src="../img/right-arrow.svg" alt=""></button>
+            </div>
+        </section>
+        <div class="subsecao">
+            <h2>Faça parte da <span>MÉDI CURA</span>, será um prazer trabalhar com você!</h2>
+            <a href="#" class="btn-vagas2">Vagas Disponíveis</a>
+        </div>
     
+    </main>
+
+    <footer>
+        <div class="first-line">
+            <div class="grid-social">
+                <label class="title-one">Acompanhe:</label>
+
+                <div class="social-content">
+                    <a href="#"><img src="../img/instagram.svg" alt=""></a>
+                    <a href=""><img src="../img/face.svg" alt=""></a>
+                </div>
+            </div>
+
+            <h2 class="medi">MÉDI CURA</h2>
+
+            <div class="sobre">
+                <span>Sobre nós</span>
+                <span class="line"></span>
+                <span>Carreiras</span>
+            </div>
+
+            <div class="contact-area">
+                <span class="Contatos">Contatos:</span>
+                <div class="infos">
+                    <img src="../img/phone.svg" alt="" class="phonps">
+                    <span class="numero">4707-2118</span>
+                    <span>|</span>
+                    <img src="../img/mail.svg" alt="" class="emailps">
+                    <span>medicura.vacinas@gov.com.br</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

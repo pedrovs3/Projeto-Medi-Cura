@@ -4,10 +4,15 @@
     background-size: cover;
     background-position: 100% 40%;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 300px;
+}
+
+::selection{
+    background-color: #00969eb4;
 }
 
 .text-content{
@@ -55,48 +60,187 @@
 
 /* Cards */
 
-.cards-container ul{
+.cards-beneficios-container .list-cards{
     height: 500px;
     display: flex;
     width: 500px;
-    gap: 330px;
+    gap: 40px;
     list-style: none;
 }
 
-.cards-container ul button{
+.cards-beneficios-container .list-cards button{
     background-color: transparent;
     border:none;
     cursor: pointer;
     color: white;
 }
 
-.cards-container ul button img{
-    height: 90px;
+.cards-beneficios-container .list-cards button img{
+    height: 120px;
 }
 
-.cards-container ul li{
-    position: absolute;
+.cards-beneficios-container .list-cards li{
+    position: relative;
     height: 500px;
     width: 300px;
-    right: 16.5%;
     background-color: #6BAAAE;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     border-radius: 5px;
     color: #f5f5f5;
+    padding: 100px;
 }
 
-.cards-container ul li:nth-child(1){
+.cards-beneficios-container .list-cards li:nth-child(1){
     opacity: 1;
 }
 
-.cards-container ul li:nth-child(2), .cards-container ul li:nth-child(3), .cards-container ul li:nth-child(4), .cards-container ul li:nth-child(5){
-
+.cards-beneficios-container .list-cards li:nth-child(2), .cards-beneficios-container ul li:nth-child(3), .cards-beneficios-container ul li:nth-child(4), .cards-beneficios-container ul li:nth-child(5){
+    visibility: none;
 }
 
-.cards-container ul li img{
+.cards-beneficios-container .list-cards li img{
     height: 80px;
+}
+
+/* seção atuação */
+
+.atuacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#6BAAAE;
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.atuacao h2{
+    padding-top: 60px;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.atuacao h3{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.flex-card-atuacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+    align-items: center;
+}
+
+.flex-card-atuacao ul{
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.flex-card-atuacao ul li{
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+    height: 550px;
+    width: 450px;
+    color: #000;
+    border-radius: 10px;
+    display: none;
+}
+
+.flex-card-atuacao ul .cards-visiveis{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+    height: 550px;
+    width: 450px;
+    color: #000;
+    border-radius: 10px;
+}
+
+.flex-card-atuacao ul li span{
+    padding: 25px 0px;
+}
+
+.flex-card-atuacao ul li img{
+    height: 600px;
+    width: 450px;
+}
+
+.flex-card-atuacao ul .cards-visiveis:nth-child(2){
+    transform: scale(1.2);
+}
+
+.btn-atuacao{
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-atuacao img{
+    height: 100px;
+}
+
+
+
+/* subseção */
+
+.subsecao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.subsecao h2{
+    padding-top: 29px;
+    font-weight: normal;
+    font-size: 2.25rem;
+}
+
+.subsecao h2 span{
+    font-weight: 800;
+    color: #006f75;
+}
+
+.btn-vagas2{
+    text-decoration: none;
+    color: #000;
+    font-size:1.25rem ;
+    margin-bottom: 36px;
+    padding: 5px 20px;
+}
+.btn-vagas2::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 27px;
+    bottom: 0;
+    height: 3px;
+    background-color: #00979E;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-vagas2:hover:before{
+    top: -5px;
 }
