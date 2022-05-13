@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    padding-top:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.title h2{
+    width: 1035px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.title > span{
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: normal;
+}
+
+.vagas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card-vagas{
+    border: 3px solid #00979E;
+    height: 200px;
+    width: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.card-vagas h3{
+    text-align: center;
+    width: 256px;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.card-vagas a{
+    width: 252px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #00979E;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* .rodape{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    height: 100px;
+    width: 100vw;
+    background-color: #000000;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 55%;
+} */
