@@ -103,7 +103,7 @@ ul li a:hover::after{
     transition: 0.3s;
 }
 
- @media (max-width: 868px){
+ @media (max-width: 768px){
     body{
         overflow-x: hidden;
     }
