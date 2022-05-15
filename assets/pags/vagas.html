@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="../pags/css/vagas.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script src="../js/script.js" defer></script>
+    <script src="../js/slider1.js" defer></script>
 </head>
 
 <body>
@@ -42,24 +45,24 @@
             </div>
             <div class="cards-beneficios-container">
                 <ul class="list-cards">
-                    <button><img src="../img/left-arrow.svg" alt=""></button>
-                    <li id="card1">
+                    <button id="anterior"><img src="../img/left-arrow.svg" alt=""></button>
+                    <li class="cards1">
                         <img src="../img/ambulance.svg" alt="ambulancia">
                         <span>Assistencia Médica</span>
                     </li>
-                    <!-- <li id="card2">
+                    <li class="cards1 visivel">
                         <p>askmdksam</p>
                     </li>
-                    <li id="card3">
-
+                    <li class="cards1 visivel" >
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem vitae dolorum impedit ab, soluta quaerat qui quidem eius cupiditate provident eos tempora vel, laudantium corporis distinctio repellendus, blanditiis nostrum!</p>
                     </li>
-                    <li id="card4">
-
+                    <li class="cards1 visivel">
+                        <p>ipsum</p>
                     </li>
-                    <li>
-
-                    </li> -->
-                    <button><img src="../img/right-arrow.svg" alt=""></button>
+                    <li class="cards1 visivel">
+                        <p>ajdksjak</p>
+                    </li>
+                    <button id="proximo"><img src="../img/right-arrow.svg" alt=""></button>
                 </ul>
             </div>
         </section>
@@ -67,77 +70,120 @@
             <h2>Conheça nossas áreas de atuação</h2>
             <h3>Clique no card para saber mais</h3>
 
-            <div class="flex-card-atuacao">
-                <button  id="prev" class="btn-atuacao"><img src="../img/left-arrow.svg" alt=""></button>
-                <ul id="cards">
-                    <li class="card-atuacao cards-visiveis">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao cards-visiveis">
-                        <span>lorem </span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao cards-visiveis">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>lorem</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                    <li class="card-atuacao">
-                        <span>Engenheiro Quimico</span>
-                        <img src="../img/quimicEnginner.jpg" alt="">
-                    </li>
-                </ul>
+            <section class="carousel" aria-label="carousel with cards">
+                <p class="sr-only">This is a carousel with product cards. Use the previous and next buttons to navigate.</p>
                 
-                <button id="next" class="btn-atuacao"><img src="../img/right-arrow.svg" alt=""></button>
-            </div>
+                <!-- Previous button -->
+                <button class="button is-control previous-button">
+                  <span class="fas fa-angle-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous cards</span>
+                </button>
+                
+                <!-- Slide content -->
+                <div class="cards">
+                  <div class="card" role="group" aria-label="card 1 of 5">
+                    <div class="content">
+                        <div class="price">
+                          <!-- add "now"? -->
+                        </div>
+                      </div>
+                    <span target="_blank">
+                        <h2 class="title">Engenheiro Quimico</h2>
+                        <div class="image">
+                        <img src="../img/quimicEnginner.jpg" class="product-image" alt="">
+                      </div>
+                    </span>
+              
+                    
+                  </div>
+                  
+                  <div class="card" role="group" aria-label="card 2 of 5">
+                    <a href="https://accessible360.com" target="_blank">
+                      <div class="image">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/curology-300x300.jpg" class="product-image" alt="">
+                      </div>
+                      <h2 class="title">Second product</h2>
+                    </a>
+                    
+                    <div class="content">  
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <div class="price">
+                        <span class="new-price">$9.99</span>
+                        <span class="original-price">
+                          <span class="sr-only">Originally:</span>
+                          $100.00
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card" role="group" aria-label="card 3 of 5">
+                    <a href="https://accessible360.com" target="_blank">
+                      <div class="image">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/imani-clovis-300x300.jpg" class="product-image" alt="">
+                      </div>
+                      <h2 class="title">Third product</h2>
+                    </a>
+                    
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <div class="price">
+                        <span class="new-price">$9.99</span>
+                        <span class="original-price">
+                          <span class="sr-only">Originally:</span>
+                          $100.00
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card" role="group" aria-label="card 4 of 5">
+                    <a href="https://accessible360.com" target="_blank">
+                      <div class="image">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/rachit-tank-300x300.jpg" class="product-image" alt="">
+                      </div>
+                      <h2 class="title">Fourth product</h2>
+                    </a>
+              
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <div class="price">
+                        <span class="new-price">$9.99</span>
+                        <span class="original-price">
+                          <span class="sr-only">Originally:</span>
+                          $100.00
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card" role="group" aria-label="card 5 of 5">
+                    <a href="https://accessible360.com" target="_blank">
+                      <div class="image">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/deanna-alys-300x300.jpg" class="product-image" alt="">
+                      </div>
+                      <h2 class="title">Fifth product</h2>
+                    </a>
+              
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <div class="price">
+                        <span class="new-price">$9.99</span>
+                        <span class="original-price">
+                          <span class="sr-only">Originally:</span>
+                          $100.00
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Next button -->
+                <button class="button is-control next-button">
+                  <span class="fas fa-angle-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next cards</span>
+                </button>
+              </section>
         </section>
         <div class="subsecao">
             <h2>Faça parte da <span>MÉDI CURA</span>, será um prazer trabalhar com você!</h2>

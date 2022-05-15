@@ -1,4 +1,4 @@
-.beneficios{
+.beneficios {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../../img/bg.png);
     margin-top: 100px;
     background-size: cover;
@@ -8,42 +8,44 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 0px 180px 0px 90px;
     /* gap: 300px; */
 }
 
-::selection{
+::selection {
     background-color: #00969eb4;
 }
 
-.text-content{
-    padding-left: 90px;
+.text-content {
     max-width: 1200px;
     color: #f5f5f5;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-start;
+
 }
 
-.text-content h1{
+.text-content h1 {
     font-size: 48px;
     font-weight: bold;
     padding-bottom: 50px;
 }
 
-.text-content span{
+.text-content span {
     font-size: 64px;
     font-weight: bolder;
 }
 
 
-.text-content p{
+.text-content p {
     font-size: 32px;
     font-weight: 500;
     max-width: 800px;
     padding-bottom: 80px;
 }
 
-.btn-vagas{
+.btn-vagas {
     font-size: 32px;
     padding: 15px 50px;
     border-radius: 10px;
@@ -54,13 +56,13 @@
     transition: all 300ms ease-in-out;
 }
 
-.btn-vagas:hover{
-    background-color:#006f75 ;
+.btn-vagas:hover {
+    background-color: #006f75;
 }
 
 /* Cards */
 
-.cards-beneficios-container .list-cards{
+.cards-beneficios-container .list-cards {
     height: 500px;
     display: flex;
     width: 500px;
@@ -68,23 +70,23 @@
     list-style: none;
 }
 
-.cards-beneficios-container .list-cards button{
+.cards-beneficios-container .list-cards button {
     background-color: transparent;
-    border:none;
+    border: none;
     cursor: pointer;
     color: white;
 }
 
-.cards-beneficios-container .list-cards button img{
+.cards-beneficios-container .list-cards button img {
     height: 120px;
 }
 
-.cards-beneficios-container .list-cards li{
+.cards-beneficios-container .list-cards .cards1 {
     position: relative;
     height: 500px;
     width: 300px;
     background-color: #6BAAAE;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -94,42 +96,40 @@
     padding: 100px;
 }
 
-.cards-beneficios-container .list-cards li:nth-child(1){
-    opacity: 1;
+
+.cards-beneficios-container .list-cards .cards1:nth-child(2) {
+    display: flex;
 }
 
-.cards-beneficios-container .list-cards li:nth-child(2), .cards-beneficios-container ul li:nth-child(3), .cards-beneficios-container ul li:nth-child(4), .cards-beneficios-container ul li:nth-child(5){
-    visibility: none;
-}
-
-.cards-beneficios-container .list-cards li img{
+.cards-beneficios-container .list-cards .cards1 img {
     height: 80px;
 }
 
 /* seção atuação */
 
-.atuacao{
+.atuacao {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#6BAAAE;
+    background-color: #6BAAAE;
     color: #f5f5f5;
     min-height: 100vh;
 }
 
-.atuacao h2{
+.atuacao h2 {
     padding-top: 60px;
     font-size: 3rem;
     font-weight: bold;
     padding-bottom: 10px;
 }
 
-.atuacao h3{
+.atuacao h3 {
     font-size: 1.5rem;
     font-weight: normal;
+    padding-bottom: 150px;
 }
 
-.flex-card-atuacao{
+.flex-card-atuacao {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -137,7 +137,7 @@
     align-items: center;
 }
 
-.flex-card-atuacao ul{
+.flex-card-atuacao ul {
     display: flex;
     flex-direction: row;
     height: 750px;
@@ -147,7 +147,7 @@
     margin: 20px 0px;
 }
 
-.flex-card-atuacao ul li{
+.flex-card-atuacao ul li {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
@@ -160,8 +160,8 @@
     display: none;
 }
 
-.flex-card-atuacao ul .cards-visiveis{
-    display:flex;
+.flex-card-atuacao ul .cards-visiveis {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
@@ -173,11 +173,11 @@
     border-radius: 10px;
 }
 
-.flex-card-atuacao ul li span{
+.flex-card-atuacao ul li span {
     padding: 25px 0px;
 }
 
-.flex-card-atuacao ul li img{
+.flex-card-atuacao ul li img {
     height: 600px;
     width: 450px;
 }
@@ -186,19 +186,19 @@
     transform: scale(1.2);
 } */
 
-.maior{
+.maior {
     transition: all 500ms ease-in-out;
     transform: scale(1.2);
 }
 
-.btn-atuacao{
+.btn-atuacao {
     height: 100px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.btn-atuacao img{
+.btn-atuacao img {
     height: 100px;
 }
 
@@ -206,7 +206,7 @@
 
 /* subseção */
 
-.subsecao{
+.subsecao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,25 +214,26 @@
     gap: 50px;
 }
 
-.subsecao h2{
+.subsecao h2 {
     padding-top: 29px;
     font-weight: normal;
     font-size: 2.25rem;
 }
 
-.subsecao h2 span{
+.subsecao h2 span {
     font-weight: 800;
     color: #006f75;
 }
 
-.btn-vagas2{
+.btn-vagas2 {
     text-decoration: none;
     color: #000;
-    font-size:1.25rem ;
+    font-size: 1.25rem;
     margin-bottom: 36px;
     padding: 5px 20px;
 }
-.btn-vagas2::before{
+
+.btn-vagas2::before {
     content: '';
     position: relative;
     display: block;
@@ -246,6 +247,228 @@
     transition: all 300ms ease-in-out;
 }
 
-.btn-vagas2:hover:before{
+.btn-vagas2:hover:before {
     top: -5px;
+}
+
+/* slider 2 */
+
+/**
+  Setup for code demo only
+*/
+:root {
+    --card-margin: 15px;
+    --carousel-height: 230px;
+}
+
+/**
+    Container
+  */
+.carousel {
+    position: relative;
+    max-width: 1500px;
+    height: 700px;
+}
+
+
+/**
+    Controls (previous/next buttons)
+  */
+.button.is-control {
+    background: 0;
+    border: 0;
+    padding: 0 10px;
+    z-index: 1;
+    cursor: pointer;
+
+    font-size: 40px;
+    color: rgba(0, 0, 0, .6);
+
+    transition: all .2s linear;
+}
+
+.button.is-control:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.button.is-control:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+
+.previous-button {
+    position: absolute;
+    left: -100px;
+    top: calc(100% / 2 - 30px);
+}
+
+.next-button {
+    position: absolute;
+    right: -100px;
+    top: calc(100% / 2 - 30px);
+}
+
+
+/**
+    Collection of all tiles
+  */
+.cards {
+    overflow: hidden;
+    width: calc(100% - 100px);
+    margin-left: 50px;
+}
+
+.owl-stage {
+    display: flex;
+    padding: 2px 0;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/**
+    Single card
+  */
+
+.owl-item:not(:last-of-type) {
+    margin-right: 100px;
+    transform: scale(1.2);
+}
+
+.card {
+    position: relative;
+    height: 500px;
+    width: 400px;
+
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+
+    text-decoration: none;
+    color: rgba(0, 0, 0, .9);
+    background-color: #f5f5f5   ;
+
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.card span {
+    text-decoration: none;
+    text-align: center;
+}
+
+.card .image {
+    overflow: hidden;
+}
+
+.card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(.5);
+}
+
+.card .title {
+    margin: 0;
+    padding: 10px 10px 25px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card .content {
+    padding: 0 10px 5px 10px;
+    transition: color .1s linear;
+}
+
+.card .content p {
+    margin: 7px 0;
+    font-size: 14px;
+    opacity: .8;
+}
+
+.card .content .price {
+    position: absolute;
+    bottom: 8px;
+}
+
+.card .content .price .new-price {
+    font-weight: bold;
+}
+
+.card .content .price .original-price {
+    margin-left: 5px;
+    font-size: 14px;
+    font-style: italic;
+    opacity: .5;
+    text-decoration: line-through;
+}
+
+/* Hover state = add box shadow, underline the title */
+.card:hover {
+    border-color: rgba(0, 0, 0, .4);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+}
+
+.card:hover .image img,
+.card:focus .image img {
+    filter: grayscale(0);
+}
+
+.card a:focus {
+    outline: none;
+}
+
+/* Focus state = turn text blue, add large blue outline */
+/* NOTE: :focus-within is not supported in IE11 or Edge as of Jan 2020. To add support, use a polyfill such as https://github.com/matteobad/focus-within-polyfill */
+.card:focus-within {
+    border-color: hsl(204, 86%, 53%);
+    box-shadow: 0 0 0 2px hsl(204, 86%, 53%);
+}
+
+.card:focus-within .title,
+.card:focus-within .content {
+    color: hsl(217, 71%, 53%);
+}
+
+.card:focus-within .title {
+    text-decoration: underline;
+}
+
+/** 
+    Owl will still put some DOM elements (like previous/next buttons) in the DOM even when they aren't used, but with a class of `.disabled`. Let's hide them completely to avoid confusing people.
+  */
+.disabled {
+    display: none;
+}
+
+/** Credits at bottom */
+.credits {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 45px;
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.credits img {
+    height: 30px;
+    margin-left: 5px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+.credits:hover,
+.credits:focus {
+    opacity: 1;
+}
+
+{
+    transform: scale(1.5);
 }
