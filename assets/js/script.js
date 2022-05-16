@@ -77,7 +77,18 @@ function handleAfterChange(e) {
   Make visible slides fully perceivable for all users
 */
 function showVisibleCards() {
-  var visibleCards = document.querySelectorAll('.carousel .cards .owl-item.active');
+  setTimeout(function (params) {
+    visibleCards.item(0).style.transform = "scale(1.2)";
+    visibleCards.item(2).style.transform = "scale(1.2)";
+    visibleCards.item(0).style.zIndex = "1";
+    visibleCards.item(2).style.zIndex = "1";
+  },100)
+  let visibleCards = document.querySelectorAll('.carousel .cards .owl-item.active');
+  // console.log(visibleCards.item(1).style.transform = "scale(1.5)")
+  visibleCards.item(1).style.transform = "scale(1.4)";
+  visibleCards.item(1).style.zIndex = "9";
+
+  
 
   visibleCards.forEach(function(card) {
     // Make the tile available to screen readers
@@ -95,6 +106,7 @@ function showVisibleCards() {
 */
 function hideNonVisibleCards() {
   var hiddenCards = document.querySelectorAll('.carousel .cards .owl-item:not(.active)');
+
 
   hiddenCards.forEach(function(card) {
     // Hide each slide using `visibility: hidden` to be extra-sure

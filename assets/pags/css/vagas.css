@@ -9,7 +9,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 180px 0px 90px;
+    padding: 0px 90px 0px 90px;
     /* gap: 300px; */
 }
 
@@ -66,7 +66,7 @@
     height: 500px;
     display: flex;
     width: 500px;
-    gap: 40px;
+    gap: 0;
     list-style: none;
 }
 
@@ -90,10 +90,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: 10px; */
     border-radius: 5px;
     color: #f5f5f5;
-    padding: 100px;
+    gap: 10px;
+    padding: 50px;
 }
 
 
@@ -126,83 +126,8 @@
 .atuacao h3 {
     font-size: 1.5rem;
     font-weight: normal;
-    padding-bottom: 150px;
+    padding-bottom: 30px ;
 }
-
-.flex-card-atuacao {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 90vw;
-    align-items: center;
-}
-
-.flex-card-atuacao ul {
-    display: flex;
-    flex-direction: row;
-    height: 750px;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
-}
-
-.flex-card-atuacao ul li {
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    align-items: center;
-    background-color: white;
-    height: 550px;
-    width: 450px;
-    color: #000;
-    border-radius: 10px;
-    display: none;
-}
-
-.flex-card-atuacao ul .cards-visiveis {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    align-items: center;
-    background-color: white;
-    height: 550px;
-    width: 450px;
-    color: #000;
-    border-radius: 10px;
-}
-
-.flex-card-atuacao ul li span {
-    padding: 25px 0px;
-}
-
-.flex-card-atuacao ul li img {
-    height: 600px;
-    width: 450px;
-}
-
-/* .cards-visiveis:nth-child(2){
-    transform: scale(1.2);
-} */
-
-.maior {
-    transition: all 500ms ease-in-out;
-    transform: scale(1.2);
-}
-
-.btn-atuacao {
-    height: 100px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-atuacao img {
-    height: 100px;
-}
-
-
 
 /* subseção */
 
@@ -252,15 +177,6 @@
 }
 
 /* slider 2 */
-
-/**
-  Setup for code demo only
-*/
-:root {
-    --card-margin: 15px;
-    --carousel-height: 230px;
-}
-
 /**
     Container
   */
@@ -269,7 +185,6 @@
     max-width: 1500px;
     height: 700px;
 }
-
 
 /**
     Controls (previous/next buttons)
@@ -341,7 +256,7 @@
 .card {
     position: relative;
     height: 500px;
-    width: 400px;
+    width: 350px;
 
     overflow: hidden;
     border-radius: 5px;
@@ -362,13 +277,17 @@
 
 .card .image {
     overflow: hidden;
+    transition: all 300ms ease-in-out;
 }
 
 .card .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(.5);
+}
+
+.active:hover .image{
+    display: none;
 }
 
 .card .title {
@@ -445,30 +364,11 @@
     display: none;
 }
 
-/** Credits at bottom */
-.credits {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 45px;
-    padding: 10px;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    opacity: .7;
+.active{
+    transition: all 300ms ease-in-out;
 }
 
-.credits img {
-    height: 30px;
-    margin-left: 5px;
-    margin-top: -2px;
-    vertical-align: middle;
+:not.active{
+    transition: all 300ms ease-in-out;
 }
 
-.credits:hover,
-.credits:focus {
-    opacity: 1;
-}
-
-{
-    transform: scale(1.5);
-}
