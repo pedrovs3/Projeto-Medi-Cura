@@ -1,0 +1,72 @@
+body{
+    background-image: url(../img/bg1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 4;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    max-width: 680px;
+}
+
+.main-content h1{
+    position: relative;
+    padding-bottom: 51px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: 59px;
+    font-size: 48px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-content p{
+    position: relative;
+    padding-bottom: 143px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.main-content h3{
+    position: relative;
+    padding-bottom: 19px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px   ;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-content .botao-home {
+    padding: 20px;
+    width: 300px;
+    padding-left: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6ba9ae;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+@media(max-width: 768px){
+    body{
+        
+    }
+}
