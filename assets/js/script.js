@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
   
   // Set up Owl Carousel
   owl = $('.carousel .cards').owlCarousel({
-    items: 2,
+    items: 1,
     loop: true,
     nav: false,
     dots: false,
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
     // Responsive breakpoints added for demo purposes only (so embeds look better).
     responsive: {
       600: {
-        items: 1
+        items: 3
       }
     }
   });
