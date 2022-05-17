@@ -12,8 +12,13 @@ footer {
     align-items: center;
     padding-left: 30px;
     color: #fff;
-    justify-content: center;
+    justify-content: flex-start;
+}
 
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    width: calc(50% + 396px / 2 );
 }
 
 .info {
@@ -23,41 +28,47 @@ footer {
     align-items: center;
     justify-content: center;
     justify-self: center;
+    gap: 5px;
 }
 
 .social-media {
     display: flex;
-    position: relative;
-    right: 35%;
-    
+    flex-direction: row;
+    gap: 30px;
+    padding-left: 10px;
+    position: relative;    
 }
 
 
-.social-media a svg {
-    width: 50px;
-    height: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
+.social-media a {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    transition: all 300ms ease-in-out;
+    color: #fff;
 }
 
-a svg:hover {
-    color: #00ADB5;
-}
-
-a svg {
+.social-media a fa-brands{
     color: #fff;
     transition: all 300ms ease-in-out;
 }
 
-.info-text {
+.social-media a:hover {
+    color: #00ADB5;
+}
+
+.info-text, .info-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     display: flex;
-
+    align-items: center;
+    gap: 5px;
 }
+
 .info-text div{
-    
     text-align: center;
-
 }
+
 .info-text img{
     height: 20px;
     
