@@ -18,6 +18,7 @@ html{
     justify-content: end;
     padding: 0 107px;
     position: fixed;
+    z-index: 2;
 }
 
 .menu-container{
@@ -108,14 +109,18 @@ ul li a:hover::after{
         overflow-x: hidden;
     }
     .flex-menu li{
+        display: none;
         margin-left: 0;
         opacity: 0;
     }
     .mobile-menu{
         display: block;
+        position: absolute;
+        right: 5%;
+        top: 30%;
     }
     .cabecalho{
-        padding: 0;
+        border-radius: 5px;
     }
-
+    
 } 
