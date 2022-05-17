@@ -16,7 +16,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .title h2{
@@ -33,16 +33,20 @@ main{
 }
 
 .title .sublinha{
-    display: inline;
-    width: 100px;
+    display: inline-block;
+    width: 260px;
+    z-index: 2;
 }
 
 .title .sublinha::after{
     content: '';
     display: block;
-    
-    background-color: #006368;
-    height: 5px;
+    position: relative;
+    top: -17px;
+    background: linear-gradient(89.97deg, #00979E 0.01%, #C8D8E5 99.97%);;
+    height: 15px;
+    border-radius: 0px 0px 5px 5px;
+    z-index: -1;
 }
 
 .vagas{

@@ -13,8 +13,6 @@ main{
     align-items: center;
 }
 
-
-
 .main-content{
     display: flex;
     flex-direction: column;
@@ -63,6 +61,11 @@ main{
     color: #fff;
     font-size: 32px;
     font-weight: bolder;
+    transition: all 300ms ease-in-out;
+}
+
+.main-content .botao-home:hover{
+    background-color: #00979E;
 }
 
 @media(max-width: 768px){

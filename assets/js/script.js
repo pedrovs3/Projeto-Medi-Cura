@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
     // Responsive breakpoints added for demo purposes only (so embeds look better).
     responsive: {
       600: {
-        items: 3
+        items: 1
       }
     }
   });

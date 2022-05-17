@@ -286,7 +286,7 @@
     object-fit: cover;
 }
 
-.active:hover .image{
+.card:hover .image{
     display: none;
 }
 
@@ -372,3 +372,90 @@
     transition: all 300ms ease-in-out;
 }
 
+@media (max-width:800px){
+    body{
+        max-width: 100vw;
+    }
+
+    .beneficios{
+        margin-top: 90px;
+        height: auto;
+        flex-direction: column;
+        padding: 50px 30px;
+        gap: 50px;
+    }
+
+    .list-cards{
+        max-width: 100vw;
+        align-self: center;
+    }
+
+    .cards-beneficios-container .list-cards .cards1{
+        align-self: center;
+        height: 300px;
+    }
+
+    .list-cards button{
+        height: 100px;
+        align-self: center;
+    }
+
+    .list-cards button img{
+        width: 100px;
+    }
+
+    .text-content h1{
+        font-size: 40px;
+    }
+
+    .atuacao h2{
+        font-size: 32px;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 30px;
+    }
+
+    .atuacao h3{
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .text-content span{
+        font-size: 48px;
+    }
+
+    .text-content p{
+        font-size: 20px;
+    }
+
+    .carousel{
+        width: 100vw;
+    }
+
+    .previous-button {
+        left: 10px;
+    }
+    
+    .next-button {
+        right: 10px;
+    }
+
+    .card {
+        height: 400px;
+        width: 220px;
+    }
+
+    .owl-item:not(:last-of-type) {
+        margin-right: 100px;
+    }
+
+    .atuacao{
+        overflow: hidden;
+        padding:0px 10px;
+    }
+
+    .subsecao{
+        display: none;
+    }
+}

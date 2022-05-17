@@ -90,3 +90,18 @@ footer{
     width: 2px;
     background-color: #FFFFFF;
 }
+
+@media (max-width:800px){
+    footer{
+        height: auto;
+    }
+    
+    .first-line{
+        max-width: 100vw;
+        flex-direction: column;
+    }
+
+    .infos{
+        flex-direction: column;
+    }
+}
