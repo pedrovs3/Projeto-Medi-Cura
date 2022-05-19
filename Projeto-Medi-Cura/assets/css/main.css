@@ -1,0 +1,95 @@
+body{
+    background-image: url(../img/spencer-davis-b_K24CtvRsg-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    max-width: 680px;
+}
+
+.main-content h1{
+    position: relative;
+    padding-bottom: 51px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: 59px;
+    font-size: 48px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-content p{
+    position: relative;
+    padding-bottom: 143px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.main-content h3{
+    position: relative;
+    padding-bottom: 19px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px   ;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-content .botao-home {
+    padding: 20px;
+    width: 300px;
+    padding-left: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6ba9ae;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bolder;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+@media(max-width: 768px){
+    .main-content{
+        padding-top: 15px;
+        padding-left: 30px;
+    }   
+    .main-content h1{
+        padding-bottom: 15px;
+        font-size: 30px;
+        line-height: normal;
+        
+    }
+    .main-content p{
+        padding-bottom: 15px;
+        text-align: start;
+        font-size: 16px;
+        width: 241px;
+    }
+    .main-content h3{
+        display: none;
+    }
+    .botao-home{
+         position: absolute;
+        top: 85%; 
+        height: 80px;
+        width: 300px;
+    }
+    footer{
+        display: none!important;
+    }
+    
+}

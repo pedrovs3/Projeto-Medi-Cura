@@ -1,0 +1,151 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    height: 15vh;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0 50px;
+    align-items: center;
+}
+
+main{
+    flex-grow:4 ;
+}
+
+a{
+    color: #FFF;
+}
+
+
+.title-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(50% + 300px / 2);
+    align-items: center;
+}
+
+
+
+.title-logo .botao-voltar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 20px;
+    height: 45px;
+    font-weight: 100;
+    text-align: center;
+    background-color:#00979E;
+    border-radius: 5px;
+}
+
+.botao-voltar:hover{
+    background-color: #6BAAAE;
+    transition: all 0.3s;
+}
+
+.title-logo .titulo-vaga{
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    text-align: center;
+} 
+
+.titulo-vaga::after{
+    content: '';
+    display: block;
+    position: relative;
+    align-self: center;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(89.97deg, #00979E 0.01%, #5678A2 99.97%);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.title-logo .logo{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 83px;
+    width: 1400px;
+    height: 50vh;
+    gap: 23px;
+}
+
+.main-container .subtitulo{
+    position: relative;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    width: 240px;
+    
+}
+
+.main-container .text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-weight: 500;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 28px;
+    text-align: center;
+    max-width: 1250px;
+    align-self: flex-start;
+    list-style: inside;
+}
+
+.subtitulo::after{
+    content: '';
+    display: block;
+    position: relative;
+    align-self: center;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(89.97deg, #00979E 0.01%, #5678A2 99.97%);
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+.contact-email{
+    text-align: center;   
+    padding-top: 26px;
+}
+
+.contact-email span{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-email span i{
+    font-size: 30px;
+    color: black;
+}
+
+.text-email{
+    padding-bottom: 10px;
+    font-weight: 800;
+    font-size: 32px;  
+    line-height: 39px;
+}
