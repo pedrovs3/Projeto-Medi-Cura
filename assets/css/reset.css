@@ -5,6 +5,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+::selection {
+    background-color: #00969eb4;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
 }

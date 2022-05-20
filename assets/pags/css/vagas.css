@@ -10,12 +10,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 90px 0px 90px;
+    overflow-x: hidden;
     /* gap: 300px; */
 }
 
-::selection {
-    background-color: #00969eb4;
-}
+
 
 .text-content {
     max-width: 1200px;

@@ -88,3 +88,31 @@ ul li a:hover::after{
     border-radius: 0px 0px 5px 5px;
     padding: 2px;
 }
+
+@media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .flex-menu li{
+        display: none;
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 30%;
+    }
+
+    .line{
+        display: block;
+        height: 4px;
+        width: 20px;
+        position: relative;
+    }
+    .cabecalho{
+        border-radius: 5px;
+    }
+    
+} 

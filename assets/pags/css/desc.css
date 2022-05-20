@@ -94,3 +94,34 @@ main{
 .card-vagas a:hover{
     background-color: #006368;
 }
+
+@media (max-width:800px){
+    .title h2{
+        font-size: 20px;
+        max-width: 100vw;
+    }
+
+    .title .sublinha{
+        width: 150px;
+    }
+
+    .vagas{
+        flex-direction: column;
+    }
+    .card-vagas{
+        border: 3px solid #00979E;
+        height: 200px;
+        width: 310px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 5px;
+    }
+
+    
+    .title .sublinha::after{
+        top: -13px;
+    }
+}

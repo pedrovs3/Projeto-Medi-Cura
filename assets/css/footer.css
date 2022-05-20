@@ -7,6 +7,7 @@ footer{
     justify-content: center;
     color: white;
     padding: 0 40px;
+    max-width: 100vw;
 }
 
 .first-line{
@@ -98,10 +99,24 @@ footer{
     
     .first-line{
         max-width: 100vw;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .infos{
         flex-direction: column;
+    }
+
+    .infos img{
+        display: none;
+    }
+
+    .grid-social .title-one{
+        display: none;
+    }
+    .medi{
+        display: none;
+    }
+    .sobre{
+        display: none;
     }
 }

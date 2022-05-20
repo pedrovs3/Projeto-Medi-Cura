@@ -39,6 +39,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.flex-form li input:focus{
+    outline: none;
+}
 
 
 .flex-form li:nth-child(2){
@@ -69,4 +72,16 @@
     transform: rotate(90deg);
     color: black;
     height: 30px;
+}
+
+@media (max-width:800px){
+    .cabecalho{
+        height: 110px;
+    }
+    .flex-form li input{
+        display: none;
+    }
+    .flex-menu{
+        display: none;
+    }
 }
