@@ -293,6 +293,25 @@ section{
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background:#0098a1;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+    color: #000000;
+    transition: all 1s ease-in-out;
+    
+}
+
 @media (max-width:600px){
 
     .intro-content{
@@ -441,25 +460,9 @@ section{
         padding-bottom: 40px;
     }
 
-    
-
-    
-
-
+    .back-to-top{
+        z-index: -1;
+        opacity: 0;
+        
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
